@@ -11,6 +11,8 @@ yarn add @standard-library/kefir-evolve
 ## Usage
 
 ```javascript
+import evolve from "kefir-evolve";
+
 const initial = { height: 0 };
 const styles = evolve({
   color: Kefir.sequentially(1000, ["red", "green", "blue"]),
