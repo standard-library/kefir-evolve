@@ -1,5 +1,5 @@
 {
-  "name": "@standard-library/kefir-spec",
+  "name": "@standard-library/kefir-evolve",
   "version": "1.0.0",
   "main": "build/index.js",
   "devDependencies": {
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/standard-library/kefir-spec.git"
+    "url": "git+https://github.com/standard-library/kefir-evolve.git"
   },
   "author": "Jack Jennings",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/standard-library/kefir-spec/issues"
+    "url": "https://github.com/standard-library/kefir-evolve/issues"
   },
-  "homepage": "https://github.com/standard-library/kefir-spec#readme",
+  "homepage": "https://github.com/standard-library/kefir-evolve#readme",
   "description": "",
   "dependencies": {
     "kefir": "^3.7.0",

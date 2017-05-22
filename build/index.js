@@ -19,7 +19,7 @@ var patches = function patches(_ref) {
 };
 var patchBy = (0, _ramda.compose)((0, _ramda.map)(patches), _ramda.toPairs);
 
-var spec = function spec(blueprint, initial) {
+var evolve = function evolve(blueprint, initial) {
   var transformations = patchBy(blueprint);
 
   return _kefir.Kefir.merge(transformations).scan(function (c, t) {
@@ -27,4 +27,4 @@ var spec = function spec(blueprint, initial) {
   }, initial);
 };
 
-exports.default = spec;
+exports.default = evolve;

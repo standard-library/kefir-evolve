@@ -1,10 +1,10 @@
 import test from "tape";
 import { Kefir as K } from "kefir";
 
-import spec from "..";
+import evolve from "..";
 
 test('merges with initial object', (t) => {
-  const output = spec({
+  const output = evolve({
     foo: K.constant(1),
     bar: K.constant(2)
   }, {});
@@ -18,7 +18,7 @@ test('merges with initial object', (t) => {
 
 test('does not mutate initial object', (t) => {
   const initial = {}
-  const output = spec({
+  const output = evolve({
     foo: K.constant(1),
     bar: K.constant(2)
   }, initial);
@@ -28,7 +28,7 @@ test('does not mutate initial object', (t) => {
 });
 
 test('combines multiple properties in sequence', (t) => {
-  const output = spec({
+  const output = evolve({
     foo: K.sequentially(5, [1, 2, 3]),
     bar: K.sequentially(20, ["a", "b"])
   }, {});
