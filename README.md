@@ -11,12 +11,13 @@ yarn add @standard-library/kefir-evolve
 ## Usage
 
 ```javascript
-const initial = {};
+const initial = { height: 0 };
 const styles = evolve({
   color: Kefir.sequentially(1000, ["red", "green", "blue"]),
   height: Kefir.sequentially(500, [10, 50, 100])
 }, initial);
 
+// [evolve] <value> { height: 0 }
 // [evolve] <value> { height: 10 }
 // [evolve] <value> { height: 50, color: "red" }
 // [evolve] <value> { height: 100, color: "red" }
