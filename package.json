@@ -25,7 +25,6 @@
   "homepage": "https://github.com/standard-library/kefir-evolve#readme",
   "description": "",
   "dependencies": {
-    "kefir": "^3.7.0",
-    "ramda": "^0.23.0"
+    "kefir": "^3.7.0"
   }
 }
