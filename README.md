@@ -5,7 +5,7 @@ Given an object containing Kefir streams as values, emits new objects with the s
 ## Installation
 
 ```shell
-yarn add @standard-library/kefir-evolve
+npm install @standard-library/kefir-evolve
 ```
 
 ## Usage
